@@ -1,0 +1,321 @@
+/* dining.css - specific styling for Nocturne dining page */
+
+/* Hero section */
+.dining-hero {
+  background: var(--ink);
+  color: #ffffff;
+  padding: clamp(56px, 7vw, 96px) 0 clamp(64px, 8vw, 100px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dining-hero-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.dining-hero .eyebrow {
+  color: var(--brass);
+}
+
+.dining-hero h1 {
+  font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  margin: 20px 0 24px;
+}
+
+.dining-hero .section-lede {
+  color: #c9cee6;
+  max-width: 58ch;
+}
+
+/* Sample dinner menu */
+.dining-menu {
+  background: var(--page);
+  padding: clamp(64px, 7vw, 96px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.dining-menu-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.menu-sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+.menu-course {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--brass);
+  margin-bottom: 24px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+}
+
+.item-name {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.item-dots {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted var(--slate);
+  min-width: 16px;
+  height: 1px;
+  opacity: 0.45;
+}
+
+.item-price {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.item-desc {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--slate);
+}
+
+/* Morning service block */
+.morning-service {
+  background: var(--panel);
+  padding: clamp(56px, 6vw, 84px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.morning-service-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.morning-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: clamp(32px, 5vw, 48px);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.morning-head h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-top: 14px;
+}
+
+.morning-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.morning-highlight {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--panel);
+  border-left: 3px solid var(--brass);
+  padding: 10px 14px;
+  margin: 0;
+  width: fit-content;
+}
+
+/* Service hours schedule */
+.service-hours {
+  background: var(--page);
+  padding: clamp(64px, 7vw, 96px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-hours-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.schedule-table {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.schedule-time {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  background: var(--panel);
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 2px;
+}
+
+.schedule-details strong {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.schedule-details p {
+  font-size: 14px;
+  color: var(--slate);
+  margin: 0;
+  max-width: 60ch;
+}
+
+/* Dietary note block */
+.dietary-note {
+  background: var(--page);
+  padding: clamp(40px, 5vw, 64px) 0;
+}
+
+.dietary-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.dietary-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--brass);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dietary-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.dietary-box p {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.55;
+  max-width: 68ch;
+}
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+  .menu-sections {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .morning-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .dining-hero-inner,
+  .dining-menu-inner,
+  .morning-service-inner,
+  .service-hours-inner,
+  .dietary-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-header {
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+
+  .item-dots {
+    display: none;
+  }
+
+  .item-name {
+    flex: 1 1 auto;
+  }
+
+  .item-price {
+    flex-shrink: 0;
+  }
+
+  .menu-course {
+    padding: 24px 20px;
+  }
+
+  .morning-card {
+    padding: 24px 20px;
+  }
+
+  .dietary-box {
+    padding: 20px;
+  }
+}
